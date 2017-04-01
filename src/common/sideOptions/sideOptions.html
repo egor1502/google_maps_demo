@@ -1,0 +1,66 @@
+<md-sidenav md-component-id="options"
+            class="md-sidenav-right"
+            md-is-open="$root.state.sideOptionsOpened"
+            md-is-locked-open="false">
+  <md-toolbar class="md-theme-indigo md-accent">
+    <h1 class="md-toolbar-tools">Search options</h1>
+  </md-toolbar>
+  <md-content layout-padding>
+    <form>
+      <md-input-container class="md-block">
+        <md-checkbox ng-model="$ctrl.options.isOpened" aria-label="Open" class="md-accent">
+          Open
+        </md-checkbox>
+
+        <div layout="row" layout-align="space-between center">
+          <div layout layout-align="center center">
+            <span class="md-body-1">Max distance</span>
+          </div>
+          <div flex="65" layout layout-align="center center">
+            <md-slider flex md-discrete class="md-accent"
+                       ng-model="$ctrl.options.maxDistance"
+                       step="500" min="500" max="5000" aria-label="Max distance">
+            </md-slider>
+          </div>
+        </div>
+
+        <div layout="row" layout-align="space-between center">
+          <div layout layout-align="center center">
+            <span class="md-body-1">Min rating</span>
+          </div>
+          <div flex="70" layout layout-align="center center">
+            <md-slider flex md-discrete class="md-accent"
+                       ng-model="$ctrl.options.minRating"
+                       step="1"
+                       min="1" max="5" aria-label="Min rating">
+            </md-slider>
+          </div>
+        </div>
+
+        <md-checkbox ng-model="$ctrl.options.noRating"
+                     aria-label="Show places without rating" class="md-accent">
+          Show places without rating
+        </md-checkbox>
+
+        <div layout="row" layout-align="space-between center">
+          <div layout layout-align="center center">
+            <span class="md-body-1">Price level</span>
+          </div>
+          <div flex="70" layout layout-align="center center">
+            <md-slider flex md-discrete class="md-accent"
+                       ng-model="$ctrl.options.priceLevel"
+                       step="1"
+                       min="0" max="4" aria-label="Price level">
+            </md-slider>
+          </div>
+        </div>
+
+        <div layout="row" layout-align="center center">
+          <md-button ng-click="$ctrl.cancelChanges = true; $root.state.sideOptionsOpened = false;">Cancel</md-button>
+          <md-button class="md-accent md-raised"
+                     ng-click="$root.state.sideOptionsOpened = false;">Apply</md-button>
+        </div>
+      </md-input-container>
+    </form>
+  </md-content>
+</md-sidenav>

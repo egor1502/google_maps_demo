@@ -1,0 +1,23 @@
+.header {
+  &__button {
+    padding: 12px 8px !important;
+    height: 48px !important;
+    position: fixed !important;
+    right: 0 !important;
+  }
+}
+
+md-nav-bar {
+  height: 48px;
+  display: block;
+
+  .md-nav-bar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 48px solid rgb(48, 48, 48);
+
+    @media screen and (max-width: 430px) {
+      height: 66px;
+    }
+  }
+}

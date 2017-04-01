@@ -1,0 +1,12 @@
+<div class="header">
+  <md-nav-bar md-selected-nav-item="$root.state.currentTab" nav-bar-aria-label="Navigation bar">
+    <md-nav-item md-nav-click="$root.state.currentTab = 'cafe'" name="cafe" aria-label="Cafes">Cafes</md-nav-item>
+    <md-nav-item md-nav-click="$root.state.currentTab = 'restaurant'" name="restaurant" aria-label="Restaurants">Restaurants</md-nav-item>
+    <md-nav-item md-nav-click="$root.state.currentTab = 'night_club'" name="night_club" aria-label="Night clubs">Night clubs</md-nav-item>
+
+    <md-button class="md-icon-button md-accent header__button"
+               aria-label="Settings" ng-click="$root.state.sideOptionsOpened = true;">
+      <md-icon>&#xE8B8;</md-icon>
+    </md-button>
+  </md-nav-bar>
+</div>

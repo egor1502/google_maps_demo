@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NG6-Starter by @AngularClass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="NG6-Starter by @AngularClass">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <base href="/">
+
+    <style>
+      body {
+        background-color: rgb(48, 48, 48);
+      }
+
+      .md-preloader {
+        font-size: 0;
+        display: inline-block;
+        animation: outer 2000ms linear infinite;
+        position: fixed;
+        top: calc(50% - 37px);
+        left: calc(50% - 37px);
+        will-change: auto;
+      }
+      .md-preloader svg {
+        animation: inner 1320ms linear infinite;
+        will-change: auto;
+      }
+      .md-preloader svg circle {
+        fill: none;
+        stroke: rgb(255, 235, 59);
+        stroke-linecap: square;
+        animation: arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;
+        will-change: auto;
+      }
+      @keyframes outer {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes inner {
+        0% {
+          transform: rotate(-100.8deg);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+      @keyframes arc {
+        0% {
+          stroke-dasharray: 1 210.48670779px;
+          stroke-dashoffset: 0;
+        }
+        40% {
+          stroke-dasharray: 151.55042961px, 210.48670779px;
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dasharray: 1 210.48670779px;
+          stroke-dashoffset: -151.55042961px;
+        }
+      }
+    </style>
+  </head>
+  <body ng-app="app" ng-strict-di ng-cloak>
+
+    <app>
+      <div class="md-preloader">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="75" width="75" viewbox="0 0 75 75">
+          <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8"/>
+        </svg>
+      </div>
+    </app>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5yM6hiroH6YJtk2BATX-52zq7CMeVt_w&libraries=places"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+      </body>
+</html>
