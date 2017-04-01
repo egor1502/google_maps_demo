@@ -1,5 +1,5 @@
 {
-  "name": "Map Demo 1",
+  "name": "google_maps_demo",
   "version": "0.0.1",
   "description": "test app for dream job",
   "main": "src/app.js",
