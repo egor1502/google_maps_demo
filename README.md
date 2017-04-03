@@ -3,6 +3,8 @@ Simple AngularJS + Google Maps API demo. You can search places around you with s
 
 Note: Data is provided from Google Maps API as is without fine-tuning!
 
+# Live demo at https://yegor-google-map-demo.getforge.io
+
 # Start a local copy
 1. Fork and clone this repo
 2. Open repo folder with your terminal
