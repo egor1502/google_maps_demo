@@ -41,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/egor1502/mission1.git"
+    "url": "git+https://github.com/egor1502/google_maps_demo.git"
   },
   "author": "Yegor Omelchenko",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/egor1502/mission1#readme"
+  "homepage": "https://github.com/egor1502/google_maps_demo#readme"
 }
